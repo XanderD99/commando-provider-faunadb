@@ -1,0 +1,25 @@
+{
+  "name": "commando-provider-faunadb",
+  "version": "1.0.0",
+  "description": "a FaunaDB provider for Discord.js Commando framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/npm7/commando-provider-faunadb.git"
+  },
+  "keywords": [
+    "discord.js",
+    "commando",
+    "provider",
+    "faunadb"
+  ],
+  "author": "XanderD99",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/npm7/commando-provider-faunadb/issues"
+  },
+  "homepage": "https://gitlab.com/npm7/commando-provider-faunadb#readme"
+}
