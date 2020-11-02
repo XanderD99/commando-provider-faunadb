@@ -11,7 +11,7 @@ const {
   Lambda,
   Documents,
   Collection: FaunaCollection,
-  Map,
+  Map: FaunaMap,
   Paginate,
   CreateIndex,
   Exists,
@@ -40,7 +40,7 @@ module.exports = class FaunaProvider extends SettingProvider {
     }
 
     // this could take a while if it is a big collection
-    const guilds = (await this.db.query(Map(
+    const guilds = (await this.db.query(FaunaMap(
       Paginate(Documents(FaunaCollection('guilds'))),
       Lambda((x) => Get(x)),
     ))).data;
@@ -48,6 +48,7 @@ module.exports = class FaunaProvider extends SettingProvider {
     guilds.forEach(({ data }) => {
       const guild = data.id !== '0' ? data.id : 'global';
       const settings = data;
+      console.log(guild, settings)
       this.settings.set(guild, settings);
       if (guild !== 'global' && !client.guilds.cache.has(guild)) return;
       this.setupGuild(guild, settings);
