@@ -1,6 +1,6 @@
 {
   "name": "commando-provider-faunadb",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a FaunaDB provider for Discord.js Commando framework",
   "main": "index.js",
   "scripts": {
