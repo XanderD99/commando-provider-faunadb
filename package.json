@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/npm7/commando-provider-faunadb.git"
+    "url": "git+ssh://git@github.com:XanderD99/commando-provider-faunadb.git"
   },
   "keywords": [
     "discord.js",
@@ -19,9 +19,9 @@
   "author": "XanderD99",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/npm7/commando-provider-faunadb/issues"
+    "url": "https://https://github.com/XanderD99/commando-provider-faunadb/issues"
   },
-  "homepage": "https://gitlab.com/npm7/commando-provider-faunadb#readme",
+  "homepage": "https://github.com/XanderD99/commando-provider-faunadb#readme",
   "peerDependencies": {
     "discord.js-commando": "^0.10.0",
     "faunadb": "^3.0.1"
