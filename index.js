@@ -48,7 +48,6 @@ module.exports = class FaunaProvider extends SettingProvider {
     guilds.forEach(({ data }) => {
       const guild = data.id !== '0' ? data.id : 'global';
       const settings = data;
-      console.log(guild, settings)
       this.settings.set(guild, settings);
       if (guild !== 'global' && !client.guilds.cache.has(guild)) return;
       this.setupGuild(guild, settings);
