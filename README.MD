@@ -23,7 +23,7 @@ Creating a new provider will create a new collection called `guilds` in your dat
 - The index is so that we can query based on the guilds id do not have to store the id given by FaunaDB.
 
 ```js
-const { Client } = requrie('faunadb');
+const { Client } = require('faunadb');
 const FaunaProvider = require('commando-provider-faunadb');
 
 ...
